@@ -1,0 +1,24 @@
+.FirstSection {
+display: flex;
+text-align: center;
+flex-direction: column;
+justify-content: center;
+}
+
+body {
+    /* background-color: aqua; */
+}
+
+.FirstSection {
+
+}
+
+.LabelBoxes {
+    margin-bottom: 10px;
+}
+
+.NumberBox {
+    padding: 0 60px;
+}
+
+
