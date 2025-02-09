@@ -1,4 +1,4 @@
-.FirstSection {
+/* .FirstSection {
 display: flex;
 text-align: center;
 flex-direction: column;
@@ -27,5 +27,10 @@ body {
    font-style: italic;
    font-size: 20px;
     
-}
+} */
 
+.intro-section {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}

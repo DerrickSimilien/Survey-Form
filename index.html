@@ -3,68 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Movie Night Survey</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div class="FirstSection">
+
+  <!-- Section 1: Introduction -->
+  <section class="intro-section">
     <h1 id="title">Movie Night</h1>
+    <p id="description">Good morning class! Every Friday we will have movie night from 5:00 PM to 9:00 PM. Please complete the form below and submit it by Monday evening!</p>
+  </section>
 
-    <p id="description" class="description">Good morning class! Every Friday we will be having movie night from 5:00PM to 9:00PM. Please complete the following information below and have it submitted by Monday evening so that we are ready for Movie nights on Monday!</p>
-  </div>
-<div class="LabelBoxes">
-  <form id="survey-form">
-    <label id="name-label">name</label>
-    <input id="name" placeholder="Enter your name" type="text" type="text" type="checkbox" value="" required></input>
-    <label id="email-label">email</label>
-    <input id="email" type="email" type="checkbox" value="" placeholder="Enter your email" required></input>
-    <label id="number-label">number</label>
-    <input class="NumberBox" id="number" placeholder="Enter your number" type="number" min="10" max="30"></input>
-    
+  <!-- First Survey Form -->
+  <form id="survey-form-1" class="survey-form">
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label for="name1" id="name-label">Name:</label>
+      <input id="name1" name="name" type="text" placeholder="Enter your name" required>
+
+      <label for="email1" id="email-label">Email:</label>
+      <input id="email1" name="email" type="email" placeholder="Enter your email" required>
+
+      <label for="number1" id="number-label">Age:</label>
+      <input id="number1" name="age" type="number" min="10" max="30" placeholder="Enter your age">
+    </fieldset>
+
+    <fieldset>
+      <legend>Movie Selection</legend>
+
+      <label for="dropdown1">Choose a movie:</label>
+      <select id="dropdown1" name="movie-choice">
+        <option value="ToyStory4">Toy Story 4</option>
+        <option value="Incredibles3">Incredibles 3</option>
+        <option value="TheLittleMermaid">The Little Mermaid</option>
+        <option value="WallE">Wall-E</option>
+      </select>
+
+      <p>Did you enjoy last week's movie?</p>
+      <label><input type="radio" name="movie-feedback1" value="yes"> Yes</label>
+      <label><input type="radio" name="movie-feedback1" value="no"> No</label>
+
+      <label for="comments1">Additional Comments:</label>
+      <textarea id="comments1" name="comments" rows="3" placeholder="Your thoughts..."></textarea>
+    </fieldset>
+
+    <button id="submit1" type="submit">Submit</button>
   </form>
-</div>    
-<div>
-  <select id="dropdown">
-    <option value="ToyStory4">Toy Story 4</option>
-    <option value="Incredibles3">Incredibles 3</option>
-    <option value="TheLittleMermaid">The Little Mermaid</option>
-    <option value="WallE">Wall-E</option>
-    </select>
-    <input type="radio" value="radio" name="radio"></input>
-    <input type="radio" value="radio" name="radio"></input>
-    <textarea></textarea>
-    <button id="submit" type="submit"></button>
-    <input type="checkbox" value="value"></input>
-  <input type="checkbox" value="value"></input>
-</div>
 
-<!-- second from -->
+  <!-- Second Survey Form -->
+  <form id="survey-form-2" class="survey-form">
+    <fieldset>
+      <legend>Personal Information</legend>
 
-<div>
-  <form id="survey-form">
-    <label id="name-label">name</label>
-    <input id="name" placeholder="Enter your name" type="text" type="text" type="checkbox" value="" required></input>
-    <label id="email-label">email</label>
-    <input id="email" type="email" type="checkbox" value="" placeholder="Enter your email" required></input>
-    <label id="number-label">number</label>
-    <input class="NumberBox" id="number" placeholder="Enter your number" type="number" min="10" max="30"></input>
-    
+      <label for="name2">Name:</label>
+      <input id="name2" name="name" type="text" placeholder="Enter your name" required>
+
+      <label for="email2">Email:</label>
+      <input id="email2" name="email" type="email" placeholder="Enter your email" required>
+
+      <label for="number2">Age:</label>
+      <input id="number2" name="age" type="number" min="10" max="30" placeholder="Enter your age">
+    </fieldset>
+
+    <fieldset>
+      <legend>Movie Selection</legend>
+
+      <label for="dropdown2">Choose a movie:</label>
+      <select id="dropdown2" name="movie-choice">
+        <option value="Holes">Holes</option>
+        <option value="NightAtTheMuseum">Night at the Museum</option>
+        <option value="Twitches">Twitches</option>
+        <option value="IndianaJones">Indiana Jones</option>
+      </select>
+
+      <p>Did you enjoy last week's movie?</p>
+      <label><input type="radio" name="movie-feedback2" value="yes"> Yes</label>
+      <label><input type="radio" name="movie-feedback2" value="no"> No</label>
+
+      <label for="comments2">Additional Comments:</label>
+      <textarea id="comments2" name="comments" rows="3" placeholder="Your thoughts..."></textarea>
+    </fieldset>
+
+    <button id="submit2" type="submit">Submit</button>
   </form>
-</div>    
-<div>
-  <select id="dropdown2">
-    <option value="Holes">Holes</option>
-    <option value="NightAtTheMuseum">Night at the Museum</option>
-    <option value="Twitches">Twitches</option>
-    <option value="IndianaJones">Indiana Jones</option>
-    </select>
-    <input type="radio" value="radio" name="radio"></input>
-    <input type="radio" value="radio" name="radio"></input>
-    <textarea></textarea>
-    <button id="submit" type="submit"></button>
-    <input type="checkbox" value="value"></input>
-  <input type="checkbox" value="value"></input>
-</div>
 
 </body>
 </html>
