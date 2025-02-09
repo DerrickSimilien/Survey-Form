@@ -107,6 +107,12 @@ button {
     border: none;
     cursor: pointer;
     font-size: 16px;
+    width: 50%; /* Centers button */
+    margin: 20px auto 0; /* Adjust spacing above and centers */
+    display: block; /* Centers button */
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 button:hover {
