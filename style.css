@@ -53,7 +53,13 @@ body {
 }
 
 legend {
-    margin: 20px 20px 30px 30px
+    margin: 20px 20px 30px 30px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.survey-form fieldset {
+    margin-bottom: 20px; /* Adjust as needed */
 }
 
 form {
@@ -65,13 +71,22 @@ form {
     max-width: 500px;
 }
 
+.form-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Space between forms */
+    padding: 20px;
+    flex-wrap: wrap; 
+}
+
 input, select, textarea, button {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 
 .NumberBox {
     padding: 5px;
@@ -114,6 +129,11 @@ select {
 
     form {
         width: 90%;
+    }
+
+    .form-container {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
