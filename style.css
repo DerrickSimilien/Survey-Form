@@ -7,14 +7,32 @@ justify-content: center;
 
 body {
     /* background-color: aqua; */
-}
 
-.FirstSection {
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #eec25b;
+        margin: 0;
+        padding: 0;
+    }
 
-}
+    #title {
+    font-size: 2rem;
+    color: #1711d5;
+    }
+
+/* .FirstSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+} */
 
 .LabelBoxes {
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .NumberBox {
@@ -22,15 +40,80 @@ body {
 }
 
 .description {
-   display: flex;
-    text-align: center;
-   font-style: italic;
-   font-size: 20px;
-    
-} */
+    font-style: italic;
+    font-size: 18px;
+    max-width: 600px;
+    /* margin-top: 10px; */
+} 
 
 .intro-section {
     display: flex;
     text-align: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
+
+legend {
+    margin: 20px 20px 30px 30px
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.NumberBox {
+    padding: 5px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Checkbox and Radio Styling */
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Dropdown */
+select {
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .FirstSection {
+        padding: 10px;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+
